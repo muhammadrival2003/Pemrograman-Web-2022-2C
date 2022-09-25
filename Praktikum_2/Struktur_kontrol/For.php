@@ -8,11 +8,12 @@
 </head>
 <body>
     <?php
-        echo "Mencari jumalh huruf vokal dalam suat kata";
+        echo "Mencari jumalh huruf vokal dalam suatu kata";
         echo "<br>"; // ganti baris
         $jumlah = 0;
         $kata = "Belajar PHP"; // suatu kata
-        $huruf = 'a'; // huruf vokal yang dicari bisa huruf a,e,i,o for ($i=0; $i<strlen($kata); $i++) #eror
+        $huruf = 'a'; // huruf vokal yang dicari bisa huruf a,e,i,o 
+        for ($i=0; $i<strlen($kata); $i++) 
         {
             if(substr($kata, $i, 1) == $huruf)
             {
