@@ -9,3 +9,4 @@
     echo "<br>";
     echo "Telpon Nida : ".$telpon ['Nida'];
     echo "<br>";
+?>
