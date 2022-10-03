@@ -17,5 +17,5 @@
             $jenis_kelamin = $_POST['jenis_kelamin'];
             echo "<br> $jenis_kelamin";
     } else
-        echo "Username dan password anda salah!!!!"
+        echo "Username dan password anda salah!!!!";
 ?>

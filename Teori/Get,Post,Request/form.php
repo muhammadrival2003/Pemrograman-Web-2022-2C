@@ -15,7 +15,7 @@
         <?php include 'form_date.php'; ?>
 
         <div class="mb-3">
-            <br><label for="exampleInputEmail1" class="form-label">Email address</label>
+            <br><label for="exampleInputEmail1" class="form-label">Username</label>
             <input type="text" class="form-control" name=email id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
@@ -27,7 +27,7 @@
             <option selected>Kelas</option>
             <option value="TI2A">TI2A</option>
             <option value="TI2B">TI2B</option>
-            <option value="TI2C">TI2C</option>
+            <option value="TI2C">TI2C</option>            
         </select>
 
         <div class="mb-3 form-check">
