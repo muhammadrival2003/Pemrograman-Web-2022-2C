@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("locahost", "root", "", "db_web2022");
+    $conn = mysqli_connect("localhost", "root", "", "db_web2022");
     $hasil = mysqli_query($conn, "select * from bukutamu");
     $jumlah = mysqli_num_rows($hasil);
     echo "<center>Daftar pengunjung</center>";
@@ -7,7 +7,6 @@
     $a=1;
     while ($baris = mysqli_fetch_array(($hasil))){
         echo "<br>";
-        echo $a;
         echo "<br>";
         echo "Nama : ";
         echo $baris[0];
@@ -15,7 +14,7 @@
         echo "Email : ";
         echo $baris[1];
         echo "<br>";
-        echo "Email : ";
+        echo "Komentar : ";
         echo $baris[2];
         $a++;
     }
