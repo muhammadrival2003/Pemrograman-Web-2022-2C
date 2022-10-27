@@ -1,6 +1,11 @@
-<?php 
-    // Script untuk Routing
+<?php     
+    session_start();
+    if(!empty($_SESSION['password'])){
+        header('location:sign-in/index.html');
+        exit();
+    }
 
+    // Script untuk Routing
     if(empty($_GEt['x']==1)){
         header("location:home.php?x=1");
     }elseif($_GET['x']==1){
@@ -14,4 +19,3 @@
     }elseif($_GET['x']==5){
         header("location:customers.php?x=5");
     }
-?>
