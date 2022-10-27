@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if (!empty($_SESSION['password'])) {
+        header('location:sign-in/index.html');
+        exit();
+    }
+?>s
+
 <!DOCTYPE html>
 <html lang="en">
 
