@@ -1,21 +1,39 @@
-<?php     
-    session_start();
-    if(!empty($_SESSION['password'])){
-        header('location:sign-in/index.html');
-        exit();
-    }
-
-    // Script untuk Routing
-    if(empty($_GEt['x']==1)){
-        header("location:home.php?x=1");
-    }elseif($_GET['x']==1){
-        header("location:home.php?x=1");
-    }elseif($_GET['x']==2){
-        header("location:dashboard.php?x=2");
-    }elseif($_GET['x']==3){
-        header("location:orders.php?x=3");
-    }elseif($_GET['x']==4){
-        header("location:products.php?x=4");
-    }elseif($_GET['x']==5){
-        header("location:customers.php?x=5");
-    }
+            <?php 
+            session_start();
+            if(isset($_GET['x']) && $_GET['x']=='home'){
+                $page = "home.php";
+                include "main.php";
+            }elseif(isset($_GET['x']) && $_GET['x']=='order'){
+                $page = "order.php";
+                include "main.php";
+            }elseif(isset($_GET['x']) && $_GET['x']=='user'){
+                if($_SESSION['level_decafe']==1){
+                    $page = "user.php";
+                    include "main.php";
+                }else{
+                    $page = "home.php";
+                    include "main.php";
+                }
+            }elseif(isset($_GET['x']) && $_GET['x']=='customer'){
+                $page = "customer.php";
+                include "main.php";
+            }elseif(isset($_GET['x']) && $_GET['x']=='report'){
+                if($_SESSION['level_decafe']==1){
+                    $page = "report.php";
+                    include "main.php";
+                }else{
+                    $page = "home.php";
+                    include "main.php";
+                }
+            }elseif(isset($_GET['x']) && $_GET['x']=='menu'){
+                $page = "menu.php";
+                include "main.php";
+            }elseif(isset($_GET['x']) && $_GET['x']=='login'){
+                include "login.php";
+            }elseif(isset($_GET['x']) && $_GET['x']=='logout'){
+                include "proses/proses_logout.php";
+            }else{
+                $page = "home.php";
+                include "main.php";
+            }
+            ?>
