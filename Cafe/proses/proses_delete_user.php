@@ -7,10 +7,10 @@
         if($query){
             $message = '<script>
             alert("Data berhasil di Hapus");
-            window.location="../user"</script>
-            </script>';
+            window.location="../user"</script>';
         }else{
-            $message = '<script>alert("Data gagal di Hapus")</script>';
+            $message = '<script>alert("Data gagal di Hapus");
+            window.location="../user"</script>';
         }
     }echo $message;
 ?>

@@ -11,5 +11,26 @@
     if ($username = mysqli_fetch_array($hasil_username) && $password = mysqli_fetch_array($hasil_password)){
         echo "Selamat anda berhasil LOGIN!";        
     } else
-        echo "Anda gagal login";
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 ?>

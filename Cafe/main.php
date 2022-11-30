@@ -25,7 +25,7 @@ $hasil = mysqli_fetch_array($query);
     <?php include "header.php"; ?>
     <!-- end header -->
     <div class="container-lg">
-        <div class="row">
+        <div class="row mb-5">
             <!-- sidebar -->
             <?php include "sidebar.php"; ?>
             <!-- end sidebar -->
@@ -37,8 +37,8 @@ $hasil = mysqli_fetch_array($query);
             <!-- end content-->
         </div>
 
-        <div class="fixed-bottom text-center mb-2">
-            Copyright 2022 Muhammad Rival
+        <div class="fixed-bottom text-center py-2 bg-light">
+            <h6 style="font-family: Full-House20; font-weight: 30;">Muhammad Rival</h6>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

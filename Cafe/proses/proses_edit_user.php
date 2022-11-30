@@ -13,17 +13,16 @@ if (!empty($_POST['input_user_validate'])) {
     if (mysqli_num_rows($select) > 0) {
         $message = '<script>
             alert("Username yang anda masukkan sudah ada");
-            window.location="../user"</script>
-            </script>';
+            window.location="../user"</script>';
     } else {
         $query = mysqli_query($conn, "UPDATE tb_user SET nama='$name', username='$username', level='$level', nohp='$nohp', alamat='$alamat' WHERE id='$id'");
         if ($query) {
             $message = '<script>
             alert("Data berhasil di Update");
-            window.location="../user"</script>
-            </script>';
+            window.location="../user"</script>';
         } else {
-            $message = '<script>alert("Data gagal di Update")</script>';
+            $message = '<script>alert("Data gagal di Update")
+            window.location="../user"</script>';
         }
     }
 }

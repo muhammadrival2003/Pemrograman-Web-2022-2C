@@ -1,0 +1,40 @@
+/* navbar.php */
+nav{
+    background-color: rgb(30, 105, 92);
+}
+
+.text{
+    font-family: "Pulang";
+    font-weight: 400;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+}
+
+ul li a{        
+    padding: 1px;
+}
+
+ul li a:hover{
+    color: black;
+    border-bottom: solid 2px white;    
+}
+
+
+@media (min-width: 770px) {
+    .img{
+        max-width: 0;
+    }
+}
+
+@media (max-width: 764px) {
+    .collapse{
+        padding-left: 0px;
+    }
+    .img{
+        max-width: 100%;
+    }
+}
+/* END navbar.php */
