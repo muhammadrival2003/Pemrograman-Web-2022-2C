@@ -17,7 +17,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="col-lg-8 d-flex justify-content-lg-center ">
+        <div class="col-lg-8 d-flex justify-content-lg-center mb-3">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link me-3 p-0" style="color: rgb(191, 220, 176); font-weight: 600;" href="index.php">BERANDA</a>
@@ -26,8 +26,8 @@
               <a class="nav-link me-3 p-0" style="color: rgb(191, 220, 176); font-weight: 600;" href="kegiatan.php">KEGIATAN</a>
             </li>
             <li class="nav-item d-flex align-items-center">
-              <div href="/" class="d-none d-lg-block d-print-block px-3">
-                <img class="" src="asset/Masjid-white.png" width="130">
+              <div href="/" class="d-none d-lg-block d-print-block mx-3 px-3">
+                <img class="" src="asset/Masjid-white.png" width="100">
               </div>
             </li>
             <li class="nav-item">

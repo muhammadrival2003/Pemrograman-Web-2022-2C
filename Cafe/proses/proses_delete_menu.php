@@ -9,7 +9,7 @@
         if($query){
             unlink("../assets/img/$foto");
             $message = '<script>
-            alert("Data berhasil di Hapus");
+            alert("Data berhasil dihapus");
             window.location="../menu"</script>';
         }else{
             $message = '<script>alert("Data gagal di Hapus");

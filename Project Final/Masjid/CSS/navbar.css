@@ -1,10 +1,11 @@
 /* navbar.php */
+
 nav{
     background-color: rgb(30, 105, 92);
 }
 
-.text{
-    font-family: "Pulang";
+.text{    
+    font-family: "montserrat";
     font-weight: 400;
 }
 
