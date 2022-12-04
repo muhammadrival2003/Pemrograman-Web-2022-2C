@@ -16,14 +16,14 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="col-lg-8 d-flex justify-content-lg-center mb-3">
+      <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarCollapse">
+        <div class="col-lg-8 d-flex justify-content-lg-center">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link me-3 p-0" style="color: rgb(191, 220, 176); font-weight: 600;" href="index.php">BERANDA</a>
+              <a class="nav-link me-3" href="index.php">BERANDA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3 p-0" style="color: rgb(191, 220, 176); font-weight: 600;" href="kegiatan.php">KEGIATAN</a>
+              <a class="nav-link me-3" href="kegiatan.php">KEGIATAN</a>
             </li>
             <li class="nav-item d-flex align-items-center">
               <div href="/" class="d-none d-lg-block d-print-block mx-3 px-3">
@@ -31,10 +31,10 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3 p-0" style="color: rgb(191, 220, 176); font-weight: 600;" href="galeri.php">GALERI</a>
+              <a class="nav-link me-3" href="galeri.php">GALERI</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link me-3 p-0" style="color: rgb(191, 220, 176); font-weight: 600;" href="contact.php">KONTAK</a>
+              <a class="nav-link me-3" href="contact.php">KONTAK</a>
             </li>
           </ul>
         </div>

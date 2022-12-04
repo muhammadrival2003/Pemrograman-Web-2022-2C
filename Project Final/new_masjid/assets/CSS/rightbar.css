@@ -1,0 +1,33 @@
+.rightbar { 
+    margin-top: 30px;
+}
+
+.level{
+    position: fixed;
+    z-index: 1;    
+}
+
+.sholat {
+    position: fixed;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.sholat ul {
+    list-style-type: none;
+}
+
+.sholat ul li {
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #aaaaaaa4;
+}
+
+.text-ws {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'montserrat';
+    font-weight: 700;
+}

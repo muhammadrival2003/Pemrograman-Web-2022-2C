@@ -1,0 +1,71 @@
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    z-index: 1;
+}
+
+.offcanvas-body-lg{
+    height: 95vh;
+    margin: 20px 10px 0px 10px;
+}
+
+.nav{
+    margin-top: 55px;
+}
+
+.text-albayaan{
+    font-family: 'montserrat';
+    font-weight: 600;
+}
+
+/* .nav-item:hover{    
+    background-color: rgb(30, 105, 92);
+    border-radius: 25px;
+}
+
+.nav-item:hover h6{    
+    color: white;
+}
+
+.nav-item h6{
+    color: black;    
+    border-radius: 25px;
+}
+
+.nav-item{        
+    border-radius: 25px;
+}
+
+.nav-link{
+    background-color: blueviolet;
+    padding: 7px 5px 3px 15px;    
+} */
+
+
+.text-sidebar{
+    padding: 7px 20px 10px 20px;
+    color: black;    
+    border-radius: 25px;
+}
+
+.text-sidebar:hover{    
+    color: white;
+    background-color: rgb(30, 105, 92);
+    border-radius: 25px;
+}
+
+.active{
+    color: white;
+    background-color: rgb(30, 105, 92);
+    border-radius: 25px;
+}
+
+.tombol-kep{
+    background-color: #ECECEC;
+}
+
+.tombol-kep:hover{
+    background-color: rgb(251, 255, 0);
+}
+/* Navbar End */

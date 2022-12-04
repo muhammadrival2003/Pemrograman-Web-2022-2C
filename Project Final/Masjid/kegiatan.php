@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="row-lg d-flex flex-wrap justify-content-center my-3">
-                <img src="asset/pengajian.jpeg" alt="" style="width: 300px; height: 170px; border-radius: 5px;">
+                <img src="assets/img/jumat.jpg" alt="" style="width: 300px; height: 170px; border-radius: 5px;">
                 <div class="col-lg text-lg-start text-center ms-4">
                     <h4 class="mb-0" style="font-size: 25px; font-weight: bold;">KEGIATAN PENGAJIAN</h4>
                     <P class="mb-0 mt-2" style="font-size: 11px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, cupiditate.</P>
