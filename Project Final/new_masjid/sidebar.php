@@ -5,21 +5,31 @@
     <link rel="stylesheet" href="assets/CSS/sidebar.css">
 </head>
 
-<div class="col-lg-2">
+<div class="col-lg-2 ">
 
     <nav class="navbar navbar-expand-lg bg-white ">
         <div class="container-fluid">
+            <!-- Tombol offcanvas sidebar -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Tombol offcanvas sidebar End -->
+
+            <!-- Tombol offcanvas rightbar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Tombol offcanvas rightbar End -->
+            
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 250px;">
-                <div class="offcanvas-header">
-                    <!-- <img src="assets/img/masjid-BLACK.png" width="200"> -->
+                <div class="offcanvas-header">                    
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body-lg d-flex flex-column justify-content-between ">
                     <div class="d-flex flex-column flex-shrink-0 ">
-                        <h4 class="text-albayaan">AL-BAYAAN</h4>
+                        <div class="row text-center mt-5">
+                            <h4 class="text-albayaan">AL-BAYAAN</h4>
+                        </div>
                         <ul class="nav nav-pills flex-column mb-auto ">
                             <li class="nav-item">
                                 <a href="beranda" class="nav-link " aria-current="page">
@@ -28,6 +38,13 @@
                             </li>
                             <li class="nav-item">
                                 <a href="kegiatan" class="nav-link " aria-current="page">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                            <div class="card card-body">
+                                                <h6 class="text-sidebar <?php echo ((isset($_GET['x']) && $_GET['x'] == 'kegiatan') || !isset($_GET['x'])) ? 'active' : 'none'; ?>"><i class="bi bi-activity me-3"></i>Kegiatan</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <h6 class="text-sidebar  <?php echo ((isset($_GET['x']) && $_GET['x'] == 'kegiatan') || !isset($_GET['x'])) ? 'active' : 'none'; ?>"><i class="bi bi-activity me-3"></i>Kegiatan</h6>
                                 </a>
                             </li>

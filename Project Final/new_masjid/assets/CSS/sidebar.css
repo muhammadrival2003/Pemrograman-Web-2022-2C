@@ -1,13 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 /* Navbar */
 .navbar{
-    position: fixed;
+    position: sticky;
+    top: 0;
+    overflow: auto;
     z-index: 1;
 }
 
 .offcanvas-body-lg{
-    height: 95vh;
-    margin: 20px 10px 0px 10px;
+    height: 97vh;
 }
 
 .nav{
@@ -15,35 +18,15 @@
 }
 
 .text-albayaan{
-    font-family: 'montserrat';
+    
+    font-family: 'Poppins';
     font-weight: 600;
 }
 
-/* .nav-item:hover{    
-    background-color: rgb(30, 105, 92);
-    border-radius: 25px;
-}
-
-.nav-item:hover h6{    
-    color: white;
-}
-
-.nav-item h6{
-    color: black;    
-    border-radius: 25px;
-}
-
-.nav-item{        
-    border-radius: 25px;
-}
-
-.nav-link{
-    background-color: blueviolet;
-    padding: 7px 5px 3px 15px;    
-} */
-
 
 .text-sidebar{
+    font-family: 'Poppins';
+    font-weight: 500;
     padding: 7px 20px 10px 20px;
     color: black;    
     border-radius: 25px;

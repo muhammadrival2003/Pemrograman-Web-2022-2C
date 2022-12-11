@@ -20,6 +20,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id_kat_menu, kategori_menu FROM t
                     <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#ModalTambahUser">Tambah Menu</button>
                 </div>
             </div>
+
             <!-- Modal Tambah Menu Baru-->
             <div class="modal fade" id="ModalTambahUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-md-down">
@@ -305,7 +306,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id_kat_menu, kategori_menu FROM t
                             </div>
                         </div>
                     </div>
-                    <!-- End Modal Delete-->                    
+                    <!-- End Modal Delete-->
 
                 <?php
                 }

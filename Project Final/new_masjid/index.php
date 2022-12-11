@@ -10,7 +10,7 @@
         $page = "galeri.php";
         include "main.php";
     } else {
-        $page = "home.php";
+        $page = "beranda.php";
         include "main.php";
     }
 ?>

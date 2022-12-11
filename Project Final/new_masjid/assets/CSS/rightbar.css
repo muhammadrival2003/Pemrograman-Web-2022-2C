@@ -1,17 +1,19 @@
-.rightbar { 
-    margin-top: 30px;
-}
+
 
 .level{
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;    
 }
 
 .sholat {
-    position: fixed;
+    /*position: fixed;*/
     background-color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-top: 80px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .sholat ul {
@@ -19,15 +21,20 @@
 }
 
 .sholat ul li {
-    padding: 7px;
-    border: 1px solid black;
+    padding: 7px;    
     border-radius: 10px;
     box-shadow: 0px 5px 5px #aaaaaaa4;
+}
+
+.sholat ul li span{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .text-ws {
     margin-top: 15px;
     margin-bottom: 10px;
-    font-family: 'montserrat';
+    font-family: 'Poppins';
     font-weight: 700;
 }

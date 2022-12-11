@@ -97,7 +97,7 @@
             <!-- Download -->
             <div class="col-lg-7">
                 <div class="container-lg download">
-                    <h5>Download isi Khutbah</h5>
+                    <h5 style="font-family: 'Poppins';">Download isi Khutbah</h5>
                     <ul>
                         <li class="d-flex flex-row flex-wrap">
                             <img src="assets/img/Icon_pengajian.png" style="margin-left: 10px; width: 65px; height: 65px;" alt="">
