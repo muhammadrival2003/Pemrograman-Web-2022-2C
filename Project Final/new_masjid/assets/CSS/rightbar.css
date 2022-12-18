@@ -1,19 +1,12 @@
-
-
-.level{
-    /* position: fixed; */
-    z-index: 1;    
-}
-
 .sholat {
     /*position: fixed;*/
     background-color: white;
     border-radius: 5px;
     margin-top: 80px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit--radius: 5px;
+    -moz--radius: 5px;
+    -ms--radius: 5px;
+    -o--radius: 5px;
 }
 
 .sholat ul {

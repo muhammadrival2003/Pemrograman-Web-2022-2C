@@ -13,64 +13,20 @@ while ($record = mysqli_fetch_array($query)) {
     <link rel="stylesheet" href="assets/CSS/beranda.css">
 </head>
 
-<div class="col-lg-7 mb-4">
+<div class="col-lg-10 ">
     <div class="container mt-5">
-        <div class="row ">
-            <!-- Banner -->
-            <div class="col d-flex justify-content-start">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalTambahGambar">Tambah Gambar</button>
-            </div>
-            <!-- Banner End -->
-        </div>
-
-        <div class="row ">
-            <!-- Modal Tambah Gambar-->
-            <div class="modal fade" id="ModalTambahGambar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-fullscreen-md-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Masukkan Gambar Baru</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="needs-validation" novalidate action="proses/proses_input_foto.php" method="POST" enctype="multipart/form-data">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="input-group mb-3">
-                                            <input type="file" class="form-control py-3" id="uploadFoto" placeholder="Your Name" name="foto" required>
-                                            <label class="input-group-text" for="uploadFoto">Upload Foto</label>
-                                            <div class="invalid-feedback">
-                                                Masukkan File Foto
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput" placeholder="Nama Menu" name="judul_foto" required>
-                                            <label for="floatingInput">Judul Foto</label>
-                                            <div class="invalid-feedback">
-                                                Masukkan judul foto
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary" name="input_foto_validate" value="12345">Save changes</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Tambah Gambar End -->
-
+        <div class="row">
+            
             <?php
             if (empty($result)) {
             ?>
-                <div class="container ">
-                    <h6 class=" "><?php echo "Gambar kosong"; ?></h6>
+                <!-- <div class="row "> -->
+                    <div class="col-lg-9">
+                        <h6><?php echo "Gambar kosong"; ?></h6>
+                    </div>
+                    <?php include "rightbar.php" ?>            
                 </div>                
+
                 <?php
             } else {
                 foreach ($result as $row) {
@@ -151,7 +107,7 @@ while ($record = mysqli_fetch_array($query)) {
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="needs-validation" novalidate action="proses/proses_delete_menu.php" method="POST">
+                                    <form class="needs-validation" novalidate action="proses/proses_delete_foto.php" method="POST">
                                         <input type="hidden" value="<?php echo $row['id'] ?>" name="id">
                                         <input type="hidden" value="<?php echo $row['foto'] ?>" name="foto">
                                         <div class="col-lg-12">
@@ -170,32 +126,42 @@ while ($record = mysqli_fetch_array($query)) {
 
                 <?php } ?>
 
-                <div class="container ">
+                <!-- <div class="container ">
                     <div class="album py-5">
-                        <div class="container ">
-                            <div class="row row-cols-1 row-cols-sm-2 g-3">
-                                <?php
-                                $no = 1;
-                                foreach ($result as $row) {
-                                ?>
-                                    <div class="col ">
-                                        <div class="card shadow-sm">
-                                            <div class="row d-flex justify-content-center ">
-                                                <img style="width: 400px;" src="assets/img/<?php echo $row['foto']; ?>" alt="">
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="row d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ModalView<?php echo $row['id']; ?>">Lihat</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ModalEdit<?php echo $row['id']; ?>">Edit</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ModalDelete<?php echo $row['id']; ?>">Delete</button>
+                        <div class="container "> -->
+                            <div class="col-lg-9">
+                                <div class="row text-center">
+                                    <h1>GALERI</h1>
+                                </div>
+                                <div class="album p-5">                                 
+                                    <div class="row row-cols-1 row-cols-sm-2 g-3 ">
+                                        <?php
+                                        $no = 1;
+                                        foreach ($result as $row) {
+                                        ?>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <div class="row d-flex justify-content-center ">
+                                                        <img style="width: 400px;" src="assets/img/<?php echo $row['foto']; ?>" alt="">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row d-flex justify-content-between align-items-center">
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ModalView<?php echo $row['id']; ?>">Lihat</button>
+                                                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ModalEdit<?php echo $row['id']; ?>">Edit</button>
+                                                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ModalDelete<?php echo $row['id']; ?>">Delete</button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        <?php } ?>
                                     </div>
-                                <?php } ?>
+                                </div>
                             </div>
+                            <!-- Righbar -->
+                            <?php include "rightbar.php" ?>
+                            <!-- Righbar End -->
                         </div>
                     </div>
                 <?php }; ?>

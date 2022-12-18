@@ -6,7 +6,11 @@
 }
 .img-banner{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .khatib{
@@ -38,7 +42,7 @@
 .download{
     padding: 15px;
     background-color: white;
-    border-radius: 10px;   
+    -radius: 10px;   
 }
 
 .download ul{
@@ -54,7 +58,7 @@
     color: white;
     font-family: 'Poppins';
     font-size: 11px;
-    border-radius: 3px;
+    -radius: 3px;
 }
 
 .text-download{    

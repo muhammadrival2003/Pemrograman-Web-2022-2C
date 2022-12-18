@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="assets/CSS/rightbar.css">
 </head>
 
-<div class="col-lg-3">
+<div class="col-lg-3 ">
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -14,26 +14,33 @@
                 <div class="offcanvas-header">                
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body-lg d-flex flex-column justify-content-between ">
+                <div class="offcanvas-body-lg d-flex flex-column justify-content-between">
                     <div class="d-flex flex-column flex-shrink-0 ">
-                        <div class="row  mt-5">
-                            <div class="dropdown d-flex justify-content-center">
+                        <div class="row m-0">
+                            <div class="dropdown d-flex justify-content-center ">                                
                                 <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="assets/img/teacher.png" alt="" width="42" height="42" class="rounded-circle me-4">
-                                    <strong>Filipus</strong>
-                                </a>
+                                    <strong>
+                                        <?php if (isset($_SESSION['level_decafe'])) {
+                                            echo $hasil['nama'];
+                                        }else{
+                                            ?> <h6>Login</h6>  <?php
+                                        }
+                                        ?>                                            
+                                    </strong>
+                                </a>                                
                                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                                     <li><a class="dropdown-item" href="login.php">Login</a></li>
                                     <li><a class="dropdown-item" href="#">Sign-up</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                    <li><a class="dropdown-item" href="proses/proses_logout.php">Sign out</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="row sholat ms-1 me-3 p-1 ">
-                            <h6 class="text-ws ms-2">Waktu Sholat</h6>
+                        <div class="row sholat m-0 mt-5">
+                            <h6 class="text-ws">Waktu Sholat</h6>
                             <ul>
                                 <li class="d-flex justify-content-between">
                                     <span><i class="bi bi-alarm mx-2"></i>Shubuh</span>
